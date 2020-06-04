@@ -5,14 +5,7 @@
 @* 4. ViewModel appraoch *@
 @model EmployeeManagement.ViewModels.HomeDetailsViewModel
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     @{
         // 1. ViewData approach
         // accessing the data that is not string type
@@ -29,15 +22,26 @@
         // 4. use view model
         var viewModel = Model;
     }
-    
-    @* <h1>@ViewData["PageTitle"]</h1> *@
-    <h1>@viewModel.PageTitle</h1>
 
-    <div>
-        Name: @viewModel.Employee.Name
-    </div>
-    <div>
-        Email: @viewModel.Employee.Email
-    </div>
-</body>
-</html>
+@* inject content of this page to layout view *@
+@{
+    @* We will use _StartView to replace this line for eaiser maintaince *@
+    @* Layout = "~/Views/Shared/_Layout.cshtml";  *@
+    ViewBag.Title = "Employee Detail";
+}
+    
+@* <h1>@ViewData["PageTitle"]</h1> *@
+<h1>@viewModel.PageTitle</h1>
+<div>
+    Name: @viewModel.Employee.Name
+</div>
+<div>
+    Email: @viewModel.Employee.Email
+</div>
+
+@* add js file *@
+@* wrap with @section so that when inject to layout view
+we can have logic to to render this script section only when load this view *@
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
+}

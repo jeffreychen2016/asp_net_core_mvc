@@ -1,0 +1,13 @@
+@{
+    Layout = "_Layout";
+
+    @* We can use this _ViewStart to controll what layout we want to load
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_NonAdminLayout";
+    } *@
+}

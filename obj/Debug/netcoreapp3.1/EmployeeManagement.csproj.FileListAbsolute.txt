@@ -28,3 +28,6 @@
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.RazorTargetAssemblyInfo.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.Views.pdb
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.csproj.CopyComplete
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs

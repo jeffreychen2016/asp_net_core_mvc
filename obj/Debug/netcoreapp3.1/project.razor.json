@@ -20524,6 +20524,21 @@
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

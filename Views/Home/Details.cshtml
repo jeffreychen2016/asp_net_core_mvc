@@ -1,0 +1,43 @@
+@* 3. strongly typed view  *@
+@* bring in model type *@
+@* @model EmployeeManagement.Models.Employee *@
+
+@* 4. ViewModel appraoch *@
+@model EmployeeManagement.ViewModels.HomeDetailsViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @{
+        // 1. ViewData approach
+        // accessing the data that is not string type
+        // we have explictly cast it to the expected type
+        // var employee = ViewData["Employee"] as EmployeeManagement.Models.Employee;
+
+        // 2. ViewBag approach
+        // with ViewBag, we do not have to do casting
+        // var employee = ViewBag.employee;
+
+        // 3. strongly typed view
+        // var employee = Model;
+
+        // 4. use view model
+        var viewModel = Model;
+    }
+    
+    @* <h1>@ViewData["PageTitle"]</h1> *@
+    <h1>@viewModel.PageTitle</h1>
+
+    <div>
+        Name: @viewModel.Employee.Name
+    </div>
+    <div>
+        Email: @viewModel.Employee.Email
+    </div>
+</body>
+</html>

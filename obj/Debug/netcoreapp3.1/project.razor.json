@@ -20519,6 +20519,12 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "EmployeeManagement",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Details.cshtml",
+      "TargetPath": "Views\\Home\\Details.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

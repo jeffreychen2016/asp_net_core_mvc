@@ -17,3 +17,14 @@
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.dll
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.pdb
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.genruntimeconfig.cache
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/EmployeeManagement.Views.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/EmployeeManagement.Views.pdb
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.RazorAssemblyInfo.cache
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.RazorAssemblyInfo.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.TagHelpers.input.cache
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.TagHelpers.output.cache
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.RazorCoreGenerate.cache
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Home/Details.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.RazorTargetAssemblyInfo.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.Views.pdb
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/EmployeeManagement.csproj.CopyComplete

@@ -20539,6 +20539,11 @@
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

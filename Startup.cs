@@ -73,7 +73,20 @@ namespace EmployeeManagement
 
             // add mvc middleware
             // https://localhost:5001/   home will print message from HomeController Index method
-            app.UseMvcWithDefaultRoute();
+            // app.UseMvcWithDefaultRoute();
+
+            // -> Conventional Routing
+            // build custom routing rule
+            // use ? to make the parameter optional
+            // use = to make default home/index/optional_id
+            // app.UseMvc(routes =>
+            // {
+            //     routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
+            // });
+
+            // -> Attribute Routing
+            // use this along with attribute in action method
+            app.UseMvc();
 
             app.Run(async (context) =>
             {

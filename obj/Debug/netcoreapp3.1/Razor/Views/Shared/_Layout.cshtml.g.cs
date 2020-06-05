@@ -12,7 +12,22 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "/Users/jeffreychen/csharp/EmployeeManagement/Views/_ViewImports.cshtml"
+using EmployeeManagement.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/Users/jeffreychen/csharp/EmployeeManagement/Views/_ViewImports.cshtml"
+using EmployeeManagement.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7ab81797f0dbc053e129b7dadb9538f3e0bc96ea", @"/Views/Shared/_Layout.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7e8d67081c4bcc4ab6986bff41c0dc5ef2ea01e2", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -41,7 +56,7 @@ namespace AspNetCore
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\n<html lang=\"en\">\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ab81797f0dbc053e129b7dadb9538f3e0bc96ea2681", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ab81797f0dbc053e129b7dadb9538f3e0bc96ea3204", async() => {
                 WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>");
 #nullable restore
 #line 6 "/Users/jeffreychen/csharp/EmployeeManagement/Views/Shared/_Layout.cshtml"
@@ -63,7 +78,7 @@ namespace AspNetCore
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ab81797f0dbc053e129b7dadb9538f3e0bc96ea3969", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ab81797f0dbc053e129b7dadb9538f3e0bc96ea4492", async() => {
                 WriteLiteral("\n    <div>\n");
                 WriteLiteral("        ");
 #nullable restore

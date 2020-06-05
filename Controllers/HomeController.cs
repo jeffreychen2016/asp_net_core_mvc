@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers
 {
+    // Attribute Routing
+    // [Route("Home")]
+    // [Route("[controller]/[action]")] // we can use token all in controller level so that we do not have specify the [action] for each methods down below.
+    [Route("[controller]")] // use token here so when we rename controller, we do not have to rename the route
     public class HomeController : Controller
     {
         // make readonly to prevent accidental mutating
@@ -14,6 +18,11 @@ namespace EmployeeManagement.Controllers
         {
             _employeeRepository = employeeRepository;
         }
+
+        // [Route("Index")] // /home/index
+        [Route("/")] // root
+        [Route("")] // /home
+        [Route("[action]")] // /home/index
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployee();
@@ -24,7 +33,9 @@ namespace EmployeeManagement.Controllers
         // meaning that it will always return json
         // use ObjectResult instead if you do not the above behavior, it return json by default
         // chain AddXmlSerializerFormatters() after AddMvc() in DI container to reutrn xml.
-        public ViewResult Details()
+        // [Route("Details/{id?}")] // /home/details/1
+        [Route("[action]/{id?}")] // /home/details/1
+        public ViewResult Details(int id)
         {
             // 1. ViewData approach. Not recommended
             // Employee model = _employeeRepository.GetEmployee(1);
@@ -43,12 +54,12 @@ namespace EmployeeManagement.Controllers
             // ViewBag.PageTitle = "Employee Details";
             // return View(model);
 
-            // ViewModel approach
+            // 4. ViewModel approach
             // use ViewModel to include extra data that Employee model does not have
             // such as PageTitle
             var homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(1),
+                Employee = _employeeRepository.GetEmployee(id),
                 PageTitle = "Employee Details"
             };
 

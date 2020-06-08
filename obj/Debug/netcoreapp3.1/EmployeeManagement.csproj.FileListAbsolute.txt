@@ -32,3 +32,4 @@
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Home/Create.cshtml.g.cs

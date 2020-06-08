@@ -65,5 +65,23 @@ namespace EmployeeManagement.Controllers
 
             return View(homeDetailsViewModel);
         }
+
+
+        // *** we need HttpGet to display form first
+        [Route("[action]")]
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        // *** and HttpPost to handle the form submission
+        [Route("[action]")]
+        [HttpPost]
+        public RedirectToActionResult Create(Employee employee)
+        {
+            Employee newEmployee = _employeeRepository.Add(employee);
+            return RedirectToAction("details", new { id = newEmployee.Id });
+        }
     };
 }

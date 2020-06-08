@@ -88,13 +88,13 @@ namespace EmployeeManagement
             // use this along with attribute in action method
             app.UseMvc();
 
-            app.Run(async (context) =>
-            {
-                // await context.Response.WriteAsync(_config["ConnectionString"]);
-                // await context.Response.WriteAsync(env.EnvironmentName);
-                // await context.Response.WriteAsync(env.IsDevelopment().ToString());
-                await context.Response.WriteAsync("hello from terminate middleware");
-            });
+            // app.Run(async (context) =>
+            // {
+            //     // await context.Response.WriteAsync(_config["ConnectionString"]);
+            //     // await context.Response.WriteAsync(env.EnvironmentName);
+            //     // await context.Response.WriteAsync(env.IsDevelopment().ToString());
+            //     await context.Response.WriteAsync("hello from terminate middleware");
+            // });
         }
     }
 }

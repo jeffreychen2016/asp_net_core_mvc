@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using EmployeeManagement.Models;
+using System.Linq;
 
 public class SQLEmployeeRepository : IEmployeeRepository
 {

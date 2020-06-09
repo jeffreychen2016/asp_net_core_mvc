@@ -20,3 +20,36 @@ official docker doc: https://hub.docker.com/_/microsoft-mssql-server
    ## docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <your_password>
    docker exec -it flamboyant_raman /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'yourStrong(!)Password'
    ```
+
+## DB Imgration
+
+once the container is up running, we need to create database by using the DbContext migration:
+
+1. install The command-line interface (CLI) tools for Entity Framework Core perform design-time development tasks [[EF Core tools reference (.NET CLI) - EF Core | Microsoft Docs](https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet#dotnet-ef-migrations-add)]
+
+```
+dotnet tool install —global dotnet-ef
+```
+
+2. install the .Net Core SDK
+3. Install the latest Microsoft.EntityFrameworkCore.Design package. (Better to use Nuget Manager to install this)
+
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+
+4. now you are able to create migration:
+
+```
+ dotnet ef migrations add InitialMigration
+```
+
+if everything works, you should see a `Migrations/` directory created.
+
+If see error:
+
+```
+Unable to create an object of type 'AppDbContext'. For the different patterns supported at design time, see https://go.microsoft.com/fwlink/?linkid=851728
+```
+
+Then update all packages.

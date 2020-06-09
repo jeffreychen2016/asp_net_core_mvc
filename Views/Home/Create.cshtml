@@ -10,12 +10,16 @@
         <label asp-for="Name" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <input asp-for="Name" class="form-control" placeholder="Name">
+           @* if there is validation error for Name, then display here *@
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group row">
         <label asp-for="Email" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <input asp-for="Email" class="form-control" placeholder="Email">
+             @* if there is validation error for Email, then display here *@
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
     </div>
 
@@ -23,10 +27,16 @@
         <label asp-for="Department" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <select asp-for="Department" class="custom-select mr-sm-2"
-                    asp-items="Html.GetEnumSelectList<Dept>()"></select>
+                    asp-items="Html.GetEnumSelectList<Dept>()">
+                <option value="">Please Select</option>
+            </select>
+
+            <span asp-validation-for="Department" class="text-danger"></span>
         </div>
     </div>
 
+    @* use summary to get all errors in one same place *@
+    <div asp-validation-summary="All" class="text-danger"></div>
     <div class="form-group row">
         <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Create</button>

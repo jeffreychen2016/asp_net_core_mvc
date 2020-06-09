@@ -33,3 +33,15 @@
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Home/Create.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Remotion.Linq.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/System.Interactive.Async.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll

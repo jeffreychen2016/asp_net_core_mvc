@@ -18,8 +18,24 @@ official docker doc: https://hub.docker.com/_/microsoft-mssql-server
 
    ```bash
    ## docker exec -it <container_id|container_name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <your_password>
-   docker exec -it flamboyant_raman /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'yourStrong(!)Password'
+   docker exec -it interesting_hoover /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'yourStrong(!)Password'
    ```
+
+## Install sql tool
+
+install sql-cli tool so that we can query the database from outside of sqlserver.
+
+command docs: [https://www.npmjs.com/package/sql-cli]
+
+```
+npm install -g sql-cli
+```
+
+to login to running database:
+
+```
+mssql -u sa -p P@55w0rd
+```
 
 ## DB Imgration
 

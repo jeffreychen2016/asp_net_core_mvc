@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
 using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers
@@ -13,10 +16,12 @@ namespace EmployeeManagement.Controllers
     {
         // make readonly to prevent accidental mutating
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IHostingEnvironment _hostingEnvironment;
 
-        public HomeController(IEmployeeRepository employeeRepository)
+        public HomeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment)
         {
             _employeeRepository = employeeRepository;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         // [Route("Index")] // /home/index
@@ -75,14 +80,51 @@ namespace EmployeeManagement.Controllers
             return View();
         }
 
+        [Route("[action]")]
+        [HttpGet]
+        public ViewResult Edit(int id)
+        {
+            Employee employee = _employeeRepository.GetEmployee(id);
+            EmployeeEditViewModel employeeEditViewModel = new EmployeeEditViewModel
+            {
+                Id = employee.Id,
+                Name = employee.Name,
+                Email = employee.Email,
+                Department = employee.Department,
+                ExistingPhotoPath = employee.PhotoPath
+            };
+
+            return View(employeeEditViewModel);
+        }
+
         // *** and HttpPost to handle the form submission
         [Route("[action]")]
         [HttpPost]
-        public IActionResult Create(Employee employee)
+        public IActionResult Create(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
-                Employee newEmployee = _employeeRepository.Add(employee);
+                string uniqueFileName = null;
+                if (model.Photo != null)
+                {
+                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+
+
+                Employee newEmployee = new Employee
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Department = model.Department,
+                    PhotoPath = uniqueFileName
+                };
+
+                // save the new employee to db
+                _employeeRepository.Add(newEmployee);
+
                 return RedirectToAction("details", new { id = newEmployee.Id });
             }
 

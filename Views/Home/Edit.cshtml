@@ -1,13 +1,16 @@
-@model EmployeeCreateViewModel
+@model EmployeeEditViewModel
 
 @{
-    ViewBag.Title = "Create Employee";
+    ViewBag.Title = "Edit Employee";
+    var photoPath = "~/Images/" + Model.ExistingPhotoPath ?? "noimage.jpg";
 }
 
 @* submit form to /home/create using POST *@
 @* have to use multipart/form-data for file upload *@
-<form  enctype="multipart/form-data" asp-controller="home" asp-action="create" method="post" class="mt-3">
+<form  enctype="multipart/form-data" asp-controller="home" asp-action="edit" method="post" class="mt-3">
     <div class="form-group row">
+        <input hidden asp-for="Id" />
+        <input hidden asp-for="ExistingPhotoPath" />
         <label asp-for="Name" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
             <input asp-for="Name" class="form-control" placeholder="Name">
@@ -44,16 +47,21 @@
                 @* however, since we the property we specified in the class has type of IFormFile *@
                 @* Asp.net core automatically create file upload input for us *@
                 <input asp-for="Photo" class="form-control custom-file-input" >
-                <label class="custom-file-label">Choose File...</label>
+                <label class="custom-file-label">Click here to change photo...</label>
             </div>
         </div>
+    </div>
+
+    <div>
+        <img src="@photoPath" class="imageThumbnail" asp-append-version="true" />
     </div>
 
     @* use summary to get all errors in one same place *@
     <div asp-validation-summary="All" class="text-danger"></div>
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-controller="home" asp-action="index" class="btn btn-primary">Back</a>
         </div>
     </div>
 

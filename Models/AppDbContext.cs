@@ -18,7 +18,8 @@ namespace EmployeeManagement.Models
         // seed/initialize data in the database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>().HasData(new Employee { Id = 1, Name = "Jeffrey", Department = Dept.IT, Email = "jeffreychen@gmail.com" });
+            // create and use modlBuilder extension method to seed data
+            modelBuilder.Seed();
         }
     }
 }

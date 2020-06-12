@@ -19,8 +19,9 @@ namespace EmployeeManagement.Models
         // we have to make it nullable
         // by default, the Numeric type is always required
         // so, we do not need [required] 
-        public Dept Department { get; set; }
+        public Dept? Department { get; set; }
         // public Dept? Department { get; set; }
 
+        public string PhotoPath { get; set; }
     }
 }

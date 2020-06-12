@@ -28,6 +28,7 @@
     @* We will use _StartView to replace this line for eaiser maintaince *@
     @* Layout = "~/Views/Shared/_Layout.cshtml";  *@
     ViewBag.Title = "Employee Detail";
+    var photoPath = "~/Images/" + viewModel.Employee.PhotoPath ?? "noimage.jpg";
 }
     
 @* <h1>@ViewData["PageTitle"]</h1> *@
@@ -41,7 +42,7 @@
             </div>
 
             <div class="card-body text-center">
-                <img class="card-img-top" src="~/images/noimage.jpg" />
+                <img class="card-img-top" src="@photoPath" asp-append-version="true" />
 
                 <h4>Employee ID : @viewModel.Employee.Id</h4>
                 <h4>Email : @viewModel.Employee.Email</h4>
@@ -50,7 +51,7 @@
             </div>
             <div class="card-footer text-center">
                 <a asp-controller="home" asp-action="index" class="btn btn-primary">Back</a>
-                <a href="#" class="btn btn-primary">Edit</a>
+                <a asp-controller="home" asp-action="details" asp-route-id="@viewModel.Employee.Id" class="btn btn-primary" class="btn btn-primary">Edit</a>
                 <a href="#" class="btn btn-danger">Delete</a>
             </div>
         </div>

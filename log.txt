@@ -30,3 +30,9 @@
 2020-06-14 16:32:41.7561|ERROR|EmployeeManagement.Controllers.HomeController|Error Log
 2020-06-14 16:32:41.7561|FATAL|EmployeeManagement.Controllers.HomeController|Critical Log
 2020-06-14 16:52:48.9129|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2020-06-14 17:39:15.3999|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-14 17:39:15.4701|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-14 17:39:15.4754|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-14 17:39:15.4791|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-14 17:39:15.4833|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-14 17:40:55.2082|WARN|ErrorController|404 Error Occured. Path = /Account/Register + and QueryString = 

@@ -36,3 +36,10 @@
 2020-06-14 17:39:15.4791|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-14 17:39:15.4833|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
 2020-06-14 17:40:55.2082|WARN|ErrorController|404 Error Occured. Path = /Account/Register + and QueryString = 
+2020-06-14 18:02:17.6664|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-14 18:02:17.7328|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-14 18:02:17.7377|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-14 18:02:17.7423|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-14 18:02:17.7461|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-14 18:02:45.0957|WARN|Microsoft.AspNetCore.Identity.UserManager|User 34c107da-1a97-4940-bc7d-8c16e0cb5ba5 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper.
+2020-06-14 18:03:01.3144|WARN|Microsoft.AspNetCore.Identity.UserManager|User 9b4ef986-348b-4b8d-991b-5789bc788f59 password validation failed: PasswordRequiresNonAlphanumeric.

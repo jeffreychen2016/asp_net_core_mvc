@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FFuMUP4gQWheqpsVwOby2gfpflggbSH3bBIeYXs5ZXtkT7GMZU2i7DRmswIXmfrqO7eU6aeF2j+E50A/ulpENg==",
+  "dgSpecHash": "vLVHIkm4hyg7hzvnvOE/V9rYEssT0Dc7q9FY4pb3qHRsm4jSwd+Zt9/rZjqqfzKywpKUh6moH4cY+msbtb6ixw==",
   "success": true,
   "projectFilePath": "/Users/jeffreychen/csharp/EmployeeManagement/EmployeeManagement.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,9 @@
     "/Users/jeffreychen/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "/Users/jeffreychen/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/jeffreychen/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "/Users/jeffreychen/.nuget/packages/nlog/4.6.8/nlog.4.6.8.nupkg.sha512",
+    "/Users/jeffreychen/.nuget/packages/nlog.extensions.logging/1.6.2/nlog.extensions.logging.1.6.2.nupkg.sha512",
+    "/Users/jeffreychen/.nuget/packages/nlog.web.aspnetcore/4.9.2/nlog.web.aspnetcore.4.9.2.nupkg.sha512",
     "/Users/jeffreychen/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/jeffreychen/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.4.0/runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/jeffreychen/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

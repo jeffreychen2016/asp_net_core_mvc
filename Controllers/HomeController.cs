@@ -5,6 +5,7 @@ using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement.Controllers
 {
@@ -17,11 +18,32 @@ namespace EmployeeManagement.Controllers
         // make readonly to prevent accidental mutating
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment)
+        public HomeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment, ILogger<HomeController> logger)
         {
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
+            _logger = logger;
+        }
+
+        private string ProcessUploadedFile(EmployeeCreateViewModel model)
+        {
+            string uniqueFileName = null;
+            if (model.Photo != null)
+            {
+                string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                // use using statement to properly dispose the resource
+                // so that we can delete the photo later
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photo.CopyTo(fileStream);
+                }
+            }
+
+            return uniqueFileName;
         }
 
         // [Route("Index")] // /home/index
@@ -42,6 +64,14 @@ namespace EmployeeManagement.Controllers
         [Route("[action]/{id?}")] // /home/details/1
         public ViewResult Details(int id)
         {
+            // throw new Exception("aaaaa");
+            // _logger.LogTrace("Trace Log");
+            // _logger.LogDebug("Debug Log");
+            // _logger.LogInformation("Information Log");
+            // _logger.LogWarning("Warning Log");
+            // _logger.LogError("Error Log");
+            // _logger.LogCritical("Critical Log");
+
             // 1. ViewData approach. Not recommended
             // Employee model = _employeeRepository.GetEmployee(1);
             // ViewData["Employee"] = model;
@@ -62,9 +92,19 @@ namespace EmployeeManagement.Controllers
             // 4. ViewModel approach
             // use ViewModel to include extra data that Employee model does not have
             // such as PageTitle
+
+            // check if the employee exits for the incoming id
+            // if not, redirect to EmployeeNotFound page.
+            Employee employee = _employeeRepository.GetEmployee(id);
+            if (employee == null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id);
+            }
+
             var homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(id),
+                Employee = employee,
                 PageTitle = "Employee Details"
             };
 
@@ -102,17 +142,10 @@ namespace EmployeeManagement.Controllers
         [HttpPost]
         public IActionResult Create(EmployeeCreateViewModel model)
         {
+            // when there is no validation error
             if (ModelState.IsValid)
             {
-                string uniqueFileName = null;
-                if (model.Photo != null)
-                {
-                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
-                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
-                }
-
+                string uniqueFileName = ProcessUploadedFile(model);
 
                 Employee newEmployee = new Employee
                 {
@@ -128,7 +161,43 @@ namespace EmployeeManagement.Controllers
                 return RedirectToAction("details", new { id = newEmployee.Id });
             }
 
+            // if there is validation error, then we want to re-render the same page
+            // so the user can fix the error
             return View();
+        }
+
+        [Route("[action]")]
+        [HttpPost]
+        public IActionResult Edit(EmployeeEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // get employee from db
+                // and then change the property of the employee using udpated info
+                // model contains the new employee info
+                Employee employee = _employeeRepository.GetEmployee(model.Id);
+                employee.Name = model.Name;
+                employee.Email = model.Email;
+                employee.Department = model.Department;
+                // is the Photo is not null, means the user uploaded a new photo
+                if (model.Photo != null)
+                {
+                    // delete existing photo
+                    if (model.ExistingPhotoPath != null)
+                    {
+                        string filePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", model.ExistingPhotoPath);
+                        System.IO.File.Delete(filePath);
+                    }
+                    employee.PhotoPath = ProcessUploadedFile(model);
+                }
+
+                // save the new employee to db
+                _employeeRepository.Update(employee);
+
+                return RedirectToAction("index");
+            }
+
+            return View(model);
         }
     };
 }

@@ -56,6 +56,17 @@ namespace EmployeeManagement
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                // use this middleware to handle exceptions from action methods
+                app.UseExceptionHandler("/Error");
+
+                // use this middleware to handle errors from 400 to 500
+                // {0} will be the action method such as 404
+                // app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                // or use this (perfered, better)
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
 
             // app.UseRouting();
 

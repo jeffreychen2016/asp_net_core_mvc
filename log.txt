@@ -1,0 +1,32 @@
+2020-06-14 16:07:45.9588|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-14 16:07:45.9908|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-14 16:07:45.9920|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-14 16:07:45.9923|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2020-06-14 16:07:45.9923|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-14 16:08:05.9466|WARN|ErrorController|404 Error Occured. Path = /Home/foo/a=b + and QueryString = 
+2020-06-14 16:08:29.0394|WARN|ErrorController|404 Error Occured. Path = /Home/boo/a=c + and QueryString = 
+2020-06-14 16:28:54.1067|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2020-06-14 16:29:00.0531|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-14 16:29:00.0770|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-14 16:29:00.0832|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-14 16:29:00.0835|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2020-06-14 16:29:00.0835|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-14 16:29:07.9245|TRACE|EmployeeManagement.Controllers.HomeController|Trace Log
+2020-06-14 16:29:07.9257|DEBUG|EmployeeManagement.Controllers.HomeController|Debug Log
+2020-06-14 16:29:07.9257|INFO|EmployeeManagement.Controllers.HomeController|Information Log
+2020-06-14 16:29:07.9257|WARN|EmployeeManagement.Controllers.HomeController|Warning Log
+2020-06-14 16:29:07.9266|ERROR|EmployeeManagement.Controllers.HomeController|Error Log
+2020-06-14 16:29:07.9266|FATAL|EmployeeManagement.Controllers.HomeController|Critical Log
+2020-06-14 16:32:31.2348|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2020-06-14 16:32:34.7383|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-14 16:32:34.7619|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-14 16:32:34.7678|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-14 16:32:34.7681|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2020-06-14 16:32:34.7681|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-14 16:32:41.7495|TRACE|EmployeeManagement.Controllers.HomeController|Trace Log
+2020-06-14 16:32:41.7506|DEBUG|EmployeeManagement.Controllers.HomeController|Debug Log
+2020-06-14 16:32:41.7557|INFO|EmployeeManagement.Controllers.HomeController|Information Log
+2020-06-14 16:32:41.7561|WARN|EmployeeManagement.Controllers.HomeController|Warning Log
+2020-06-14 16:32:41.7561|ERROR|EmployeeManagement.Controllers.HomeController|Error Log
+2020-06-14 16:32:41.7561|FATAL|EmployeeManagement.Controllers.HomeController|Critical Log
+2020-06-14 16:52:48.9129|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

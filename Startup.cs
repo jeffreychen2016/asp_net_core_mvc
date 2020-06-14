@@ -38,6 +38,13 @@ namespace EmployeeManagement
             // register Identity core for authentication and authorization
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
+            // change the password configuration
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+            });
+
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);
 

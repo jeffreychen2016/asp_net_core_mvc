@@ -6,6 +6,7 @@ using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -30,11 +31,15 @@ namespace EmployeeManagement
         // this is also called dependency injection container
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // register DbContext class for EF core.
+            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+
+            // register Identity core for authentication and authorization
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);
-
-            // register DbContext class
-            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
 
             // return xml format 
             // use it with ObjectResult in controller
@@ -89,6 +94,9 @@ namespace EmployeeManagement
 
             // add middleware to serve static files
             app.UseStaticFiles();
+
+            // add middleware for authentication
+            app.UseAuthentication();
 
             // add mvc middleware
             // https://localhost:5001/   home will print message from HomeController Index method

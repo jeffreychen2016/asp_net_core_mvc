@@ -59,3 +59,6 @@
 /Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/NLog.dll
 /Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
 /Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll

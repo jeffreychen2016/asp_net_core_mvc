@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManagement.Models
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -18,6 +19,11 @@ namespace EmployeeManagement.Models
         // seed/initialize data in the database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // calling the method on the base class 
+            // to fix the error:
+            // The entity type 'IdentityUserLogin<string>' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+            base.OnModelCreating(modelBuilder);
+
             // create and use modlBuilder extension method to seed data
             modelBuilder.Seed();
         }

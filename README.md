@@ -34,7 +34,7 @@ npm install -g sql-cli
 to login to running database:
 
 ```
-mssql -u sa -p P@55w0rd
+mssql -u sa -p 'yourStrong(!)Password'
 ```
 
 ## DB Imgration

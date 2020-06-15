@@ -1,3 +1,6 @@
+@* inject SignInManager class to this view, so we hide or display info based on the user login status *@
+@inject SignInManager<IdentityUser> signInManager
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,11 +34,28 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="account" asp-action="register">
-                            Register
-                        </a>
-                    </li>
+                    @if (signInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <form method="post" asp-controller="account" asp-action="logout">
+                                <button type="submit" style="width:auto"
+                                        class="nav-link btn btn-link py-0">
+                                    Logout @User.Identity.Name
+                                </button>
+                            </form>
+                        </li>
+                    } else {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="register">
+                                Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="login">
+                                Login
+                            </a>
+                        </li>
+                    }
                 </ul>
             </div>
         </nav>

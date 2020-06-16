@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,6 +14,7 @@ namespace EmployeeManagement.Controllers
     // [Route("Home")]
     // [Route("[controller]/[action]")] // we can use token all in controller level so that we do not have specify the [action] for each methods down below.
     [Route("[controller]")] // use token here so when we rename controller, we do not have to rename the route
+    [Authorize]
     public class HomeController : Controller
     {
         // make readonly to prevent accidental mutating

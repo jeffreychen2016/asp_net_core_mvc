@@ -69,3 +69,13 @@
 2020-06-14 19:02:39.6082|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-14 19:02:39.6124|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-14 19:02:39.6167|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-15 20:38:28.0468|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-15 20:38:28.1269|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-15 20:38:28.1327|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-15 20:38:28.1373|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-15 20:38:28.1415|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-15 20:58:40.4164|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-15 20:58:40.5090|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-15 20:58:40.5156|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-15 20:58:40.5204|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-15 20:58:40.5261|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

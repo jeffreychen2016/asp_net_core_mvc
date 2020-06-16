@@ -86,7 +86,8 @@ namespace EmployeeManagement.Controllers
         [Route("[action]")]
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        // model binding automatically maps query string to the action parameter
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +96,17 @@ namespace EmployeeManagement.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("index", "home");
+                    if (!string.IsNullOrEmpty(returnUrl))
+                    {
+                        // redirect user back to the page right before redirected to login
+                        // use LocalRedirect() to prevent Open Redirect Attack
+                        // this method only redirects to local routes.
+                        return LocalRedirect(returnUrl);
+                    }
+                    else
+                    {
+                        return RedirectToAction("index", "home");
+                    }
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");

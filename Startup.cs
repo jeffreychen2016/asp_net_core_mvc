@@ -38,7 +38,7 @@ namespace EmployeeManagement
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
 
             // register Identity core for authentication and authorization
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
             // change the password configuration
             services.Configure<IdentityOptions>(options =>

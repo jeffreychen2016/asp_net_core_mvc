@@ -64,3 +64,4 @@
 /Users/jeffreychen/csharp/EmployeeManagement/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs
 /Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/jeffreychen/csharp/EmployeeManagement/obj/Debug/netcoreapp3.1/Razor/Views/Administration/CreateRole.cshtml.g.cs

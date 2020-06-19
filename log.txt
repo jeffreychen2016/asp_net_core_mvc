@@ -1424,3 +1424,8 @@ Error Number:207,State:1,Class:16
 2020-06-16 21:26:43.8321|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-16 21:26:43.8361|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-16 21:26:43.8407|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 19:02:23.8418|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 19:02:23.9057|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 19:02:23.9217|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 19:02:23.9270|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 19:02:23.9319|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

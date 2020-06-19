@@ -20521,6 +20521,11 @@
   "RootNamespace": "EmployeeManagement",
   "Documents": [
     {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Administration/ListRoles.cshtml",
+      "TargetPath": "Views\\Administration\\ListRoles.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"

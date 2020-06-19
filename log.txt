@@ -1776,3 +1776,15 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-18 20:45:56.8799|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-18 20:45:56.8845|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-18 20:45:56.8949|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:55:53.5996|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:55:53.7325|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:55:53.7427|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:55:53.7503|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:55:53.7549|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:58:28.5731|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:58:28.6389|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:58:28.6466|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:58:28.6506|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:58:28.6547|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:59:02.3643|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
+2020-06-18 20:59:03.1326|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles

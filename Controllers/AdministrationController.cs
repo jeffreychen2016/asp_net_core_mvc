@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace EmployeeManagement.Controllers
 {
     [Route("[controller]")]
+    [Authorize(Roles = "admin")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;

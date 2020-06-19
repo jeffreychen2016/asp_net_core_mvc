@@ -1788,3 +1788,41 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-18 20:58:28.6547|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
 2020-06-18 20:59:02.3643|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
 2020-06-18 20:59:03.1326|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
+2020-06-18 21:11:11.0483|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:11:11.1436|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:11:11.1867|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:11:11.2139|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:11:11.2241|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:11:41.3863|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:11:41.4724|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:11:41.4795|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:11:41.4851|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:11:41.4893|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:12:44.4832|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:12:44.5849|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:12:44.5911|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:12:44.5961|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:12:44.6028|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:16:15.9817|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:16:16.0266|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:16:16.0337|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:16:16.0392|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:16:16.0436|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:20:19.4997|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:20:19.6147|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:20:19.6215|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:20:19.6281|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:20:19.6326|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:20:41.7622|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
+2020-06-18 21:20:43.2647|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
+2020-06-18 21:21:30.7373|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:21:30.7991|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:21:30.8046|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:21:30.8094|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:21:30.8144|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 21:21:48.9372|WARN|ErrorController|404 Error Occured. Path = /Account/AccessDenied + and QueryString = ?ReturnUrl=%2Fadministration%2Flistroles
+2020-06-18 21:22:22.9083|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 21:22:22.9481|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 21:22:22.9659|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 21:22:22.9695|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 21:22:22.9746|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

@@ -1690,3 +1690,89 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-18 19:48:20.6949|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-18 19:48:20.7340|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-18 19:48:20.7552|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 19:55:40.9615|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 19:55:41.0214|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 19:55:41.0287|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 19:55:41.0328|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 19:55:41.0373|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:02:02.3975|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:02:02.5201|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:02:02.5297|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:02:02.5378|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:02:02.5432|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:02:12.2330|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (27ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2020-06-18 20:02:12.2659|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'EmployeeManagement.Models.AppDbContext'.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2020-06-18 20:02:12.8139|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-18 20:02:12.8398|ERROR|ErrorController|The path /Administration/EditUsersInRole threw an exception System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.IsInRoleAsync(TUser user, String role)
+   at EmployeeManagement.Controllers.AdministrationController.EditUsersInRole(String roleId) in /Users/jeffreychen/csharp/EmployeeManagement/Controllers/AdministrationController.cs:line 156
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-06-18 20:06:26.5034|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:06:26.5649|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:06:26.5723|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:06:26.5769|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:06:26.5809|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:10:42.5770|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:10:42.6643|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:10:42.6721|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:10:42.6766|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:10:42.6812|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:45:19.6378|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:45:19.6868|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:45:19.6929|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:45:19.6967|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:45:19.7021|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-18 20:45:56.7878|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-18 20:45:56.8709|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-18 20:45:56.8799|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-18 20:45:56.8845|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-18 20:45:56.8949|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

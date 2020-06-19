@@ -20536,6 +20536,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Administration/EditRole.cshtml",
+      "TargetPath": "Views\\Administration\\EditRole.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"

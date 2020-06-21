@@ -335,6 +335,10 @@ namespace EmployeeManagement.Controllers
 
 
         [Route("[action]")]
+        // to access this action method:
+        // 1. the logged user must be in `admin` role (it is specified in the controller)
+        // 2. must have satisify `DeleteRolePolicy`. in our case, this policy has 2 claims -- Delete Role and Create Role
+        [Authorize(Policy = "DeleteRolePolicy")]
         [HttpPost]
         public async Task<IActionResult> DeleteRole(string id)
         {

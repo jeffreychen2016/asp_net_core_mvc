@@ -61,6 +61,13 @@ namespace EmployeeManagement
                 config.EnableEndpointRouting = false;
             });
 
+
+            // add claim-based authorization
+            services.AddAuthorization(options =>
+                options.AddPolicy("DeleteRolePolicy",
+                    policy => policy.RequireClaim("Delete Role")
+                                    .RequireClaim("Create Role")));
+
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);
 

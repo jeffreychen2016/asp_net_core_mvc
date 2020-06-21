@@ -2749,3 +2749,169 @@ Error Number:547,State:0,Class:16
 2020-06-21 14:51:55.0199|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-21 14:51:55.0238|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-21 14:51:55.0313|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:13:53.6947|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:13:53.7484|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:13:53.7528|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:13:53.7571|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:13:53.7606|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:13:54.5182|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:13:54.5467|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:13:54.5587|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M3UFFILT5", Request id "0HM0M3UFFILT5:00000001": An unhandled exception was thrown by the application.
+2020-06-21 15:14:40.5189|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:14:40.5286|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:14:40.5339|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M3UFFILT5", Request id "0HM0M3UFFILT5:00000002": An unhandled exception was thrown by the application.
+2020-06-21 15:15:20.9564|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:15:20.9657|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:15:20.9715|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M3UFFILT5", Request id "0HM0M3UFFILT5:00000003": An unhandled exception was thrown by the application.
+2020-06-21 15:16:14.9208|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:16:14.9990|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:16:15.0142|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:16:15.0187|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:16:15.0277|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:17:19.9546|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:17:20.0260|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:17:20.0317|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:17:20.0367|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:17:20.0412|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:17:20.6030|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:17:20.6290|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:17:20.6385|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M40CT7OE6", Request id "0HM0M40CT7OE6:00000001": An unhandled exception was thrown by the application.
+2020-06-21 15:17:36.0017|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:17:36.0148|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:17:36.0223|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M40CT7OE6", Request id "0HM0M40CT7OE6:00000002": An unhandled exception was thrown by the application.
+2020-06-21 15:17:40.6609|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-06-21 15:17:40.6718|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2020-06-21 15:17:40.6780|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM0M40CT7OE6", Request id "0HM0M40CT7OE6:00000003": An unhandled exception was thrown by the application.
+2020-06-21 15:19:29.2358|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:19:29.3080|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:19:29.3208|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:19:29.3300|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:19:29.3374|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:20:20.4404|WARN|ErrorController|404 Error Occured. Path = /administration/deleterole + and QueryString = 
+2020-06-21 15:21:13.9098|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2020-06-21 15:21:13.9539|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'EmployeeManagement.Models.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_AspNetUserRoles_AspNetRoles_RoleId". The conflict occurred in database "EmployeeDB", table "dbo.AspNetUserRoles", column 'RoleId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b97a3932-7856-420e-a312-452e3ad48693
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-06-21 15:21:14.5320|ERROR|EmployeeManagement.Controllers.AdministrationController|Exception Occured : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_AspNetUserRoles_AspNetRoles_RoleId". The conflict occurred in database "EmployeeDB", table "dbo.AspNetUserRoles", column 'RoleId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b97a3932-7856-420e-a312-452e3ad48693
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SaveChanges(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(TRole role, CancellationToken cancellationToken)
+   at EmployeeManagement.Controllers.AdministrationController.DeleteRole(String id) in /Users/jeffreychen/csharp/EmployeeManagement/Controllers/AdministrationController.cs:line 357
+2020-06-21 15:21:41.7964|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2020-06-21 15:21:41.8110|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'EmployeeManagement.Models.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_AspNetUserRoles_AspNetRoles_RoleId". The conflict occurred in database "EmployeeDB", table "dbo.AspNetUserRoles", column 'RoleId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b97a3932-7856-420e-a312-452e3ad48693
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-06-21 15:21:42.0113|ERROR|EmployeeManagement.Controllers.AdministrationController|Exception Occured : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_AspNetUserRoles_AspNetRoles_RoleId". The conflict occurred in database "EmployeeDB", table "dbo.AspNetUserRoles", column 'RoleId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b97a3932-7856-420e-a312-452e3ad48693
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SaveChanges(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(TRole role, CancellationToken cancellationToken)
+   at EmployeeManagement.Controllers.AdministrationController.DeleteRole(String id) in /Users/jeffreychen/csharp/EmployeeManagement/Controllers/AdministrationController.cs:line 357
+2020-06-21 15:23:01.6613|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:23:01.7912|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:23:01.7978|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:23:01.8025|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:23:01.8065|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:27:03.4003|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:27:03.4538|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:27:03.4612|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:27:03.4657|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:27:03.4692|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-21 15:31:53.4090|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 15:31:53.4698|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 15:31:53.4788|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 15:31:53.4826|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 15:31:53.4918|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

@@ -77,7 +77,7 @@
         @* inject other view into this page *@
         @RenderBody()
     </div>
-    @* render teh script section only if it is defined *@
+    @* render the script section only if it is defined *@
     @if (IsSectionDefined("Scripts"))
     {
         @RenderSection("Scripts", required: true)

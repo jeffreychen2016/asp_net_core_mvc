@@ -1,3 +1,4 @@
+using System.Linq;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +27,15 @@ namespace EmployeeManagement.Models
 
             // create and use modlBuilder extension method to seed data
             modelBuilder.Seed();
+
+
+            // set cascading referential integrity constraint to `NO ACTION`
+            // which will enforce rule:
+            // when delete a role, must delete all users assign to the role first.
+            foreach (var foreignKey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
+            }
         }
     }
 }

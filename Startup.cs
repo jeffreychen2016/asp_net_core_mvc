@@ -87,6 +87,7 @@ namespace EmployeeManagement
             else
             {
                 // use this middleware to handle exceptions from action methods
+                // redirect user to the /Error page
                 app.UseExceptionHandler("/Error");
 
                 // use this middleware to handle errors from 400 to 500

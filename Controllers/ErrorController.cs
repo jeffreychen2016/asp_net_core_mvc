@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+[AllowAnonymous]
 public class ErrorController : Controller
 {
     private ILogger<ErrorController> _logger;
@@ -34,9 +35,9 @@ public class ErrorController : Controller
     }
 
     // handle unhandled exception from other action methods
-    [Route("Error")]
     [AllowAnonymous]
-    public void Error()
+    [Route("Error")]
+    public IActionResult Error()
     {
         var exceptionDetails = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
         ViewBag.ExceptionPath = exceptionDetails.Path;
@@ -48,5 +49,7 @@ public class ErrorController : Controller
 
         // log exception details
         _logger.LogError($"The path {exceptionDetails.Path} threw an exception {exceptionDetails.Error}");
+
+        return View("Error");
     }
 }

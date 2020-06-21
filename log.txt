@@ -1862,3 +1862,8 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-20 19:47:21.9375|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-20 19:47:21.9424|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-20 19:47:21.9472|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 19:52:55.1204|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 19:52:55.2420|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 19:52:55.2506|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 19:52:55.2568|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 19:52:55.2617|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

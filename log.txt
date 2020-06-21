@@ -2739,3 +2739,8 @@ Error Number:547,State:0,Class:16
    at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SaveChanges(CancellationToken cancellationToken)
    at Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(TRole role, CancellationToken cancellationToken)
    at EmployeeManagement.Controllers.AdministrationController.DeleteRole(String id) in /Users/jeffreychen/csharp/EmployeeManagement/Controllers/AdministrationController.cs:line 354
+2020-06-21 14:12:19.4179|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-21 14:12:19.5311|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-21 14:12:19.5357|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-21 14:12:19.5390|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-21 14:12:19.5439|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

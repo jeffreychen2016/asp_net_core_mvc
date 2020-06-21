@@ -50,6 +50,14 @@ namespace EmployeeManagement.Controllers
                 // SignInManager and redirect to index action of HomeController
                 if (result.Succeeded)
                 {
+
+                    // if it is the admin registers a new user
+                    // we do not want to log in as new user and got redirected
+                    if (signInManager.IsSignedIn(User) && User.IsInRole("admin"))
+                    {
+                        return RedirectToAction("ListUsers", "Administration");
+                    }
+
                     // isPersistent: create permant cookie OR session cookie
                     // session cookie get lost when close brower
                     // isPersistent: false - create session cookie

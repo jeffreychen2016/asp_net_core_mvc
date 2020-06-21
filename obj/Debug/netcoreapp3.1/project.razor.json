@@ -20571,6 +20571,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Administration/EditUser.cshtml",
+      "TargetPath": "Views\\Administration\\EditUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Account/Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"

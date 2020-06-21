@@ -1846,3 +1846,19 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-20 19:19:14.5347|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-20 19:19:14.5414|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-20 19:19:14.5467|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 19:40:41.7085|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 19:40:41.7621|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 19:40:41.7683|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 19:40:41.7720|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 19:40:41.7759|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 19:46:09.5164|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 19:46:09.5896|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 19:46:09.5987|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 19:46:09.6029|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 19:46:09.6074|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 19:46:26.6941|WARN|ErrorController|404 Error Occured. Path = /Administration/EditUser + and QueryString = ?id=20404127-a02a-40ad-8096-1159aac46da7
+2020-06-20 19:47:21.8303|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 19:47:21.9310|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 19:47:21.9375|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 19:47:21.9424|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 19:47:21.9472|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

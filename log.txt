@@ -1877,3 +1877,18 @@ System.InvalidOperationException: There is already an open DataReader associated
 2020-06-20 20:16:41.0645|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-20 20:16:41.0865|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-20 20:16:41.0938|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 20:24:02.5336|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 20:24:02.7437|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 20:24:02.8022|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 20:24:02.8082|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 20:24:02.8149|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 20:25:20.4821|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 20:25:20.5488|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 20:25:20.5681|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 20:25:20.5782|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 20:25:20.5855|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-20 20:27:23.2582|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-20 20:27:23.3848|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-20 20:27:23.3928|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-20 20:27:23.3973|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-20 20:27:23.4013|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

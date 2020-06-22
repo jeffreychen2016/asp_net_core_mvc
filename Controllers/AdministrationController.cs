@@ -72,6 +72,7 @@ namespace EmployeeManagement.Controllers
             return View(roles);
         }
 
+        [Authorize(Policy = "EditRolePolicy")]
         [Route("[action]")]
         // Role ID is passed from the URL to the action
         [HttpGet]
@@ -115,6 +116,7 @@ namespace EmployeeManagement.Controllers
         }
 
 
+
         [Route("[action]")]
         // This action responds to HttpPost and receives EditRoleViewModel
         [HttpPost]
@@ -148,6 +150,7 @@ namespace EmployeeManagement.Controllers
             }
         }
 
+        [Authorize(Policy = "EditRolePolicy")]
         [Route("[action]")]
         [HttpGet]
         public async Task<IActionResult> EditUsersInRole(string roleId)
@@ -188,6 +191,7 @@ namespace EmployeeManagement.Controllers
             return View(model);
         }
 
+        [Authorize(Policy = "EditRolePolicy")]
         [Route("[action]")]
         [HttpPost]
         public async Task<IActionResult> EditUsersInRole(List<UserRoleViewModel> model, string roleId)

@@ -65,8 +65,11 @@ namespace EmployeeManagement
             // add claim-based authorization
             services.AddAuthorization(options =>
                 options.AddPolicy("DeleteRolePolicy",
-                    policy => policy.RequireClaim("Delete Role")
-                                    .RequireClaim("Create Role")));
+                    policy => policy.RequireClaim("Delete Role")));
+
+            services.AddAuthorization(options =>
+                options.AddPolicy("EditRolePolicy",
+                    policy => policy.RequireClaim("Edit Role")));
 
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);

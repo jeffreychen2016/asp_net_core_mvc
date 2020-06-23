@@ -2979,3 +2979,23 @@ Error Number:547,State:0,Class:16
 2020-06-22 19:35:25.9581|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-22 19:35:25.9636|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-22 19:35:25.9682|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-22 20:39:10.6989|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-22 20:39:10.8014|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-22 20:39:10.8108|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-22 20:39:10.8157|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-22 20:39:10.8244|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-22 20:41:09.9191|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-22 20:41:10.0938|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-22 20:41:10.1164|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-22 20:41:10.1399|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-22 20:41:10.1601|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-22 20:44:18.0312|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-22 20:44:18.0831|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-22 20:44:18.0901|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-22 20:44:18.0943|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-22 20:44:18.0991|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-22 20:48:06.2609|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-22 20:48:06.3093|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-22 20:48:06.3135|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-22 20:48:06.3177|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-22 20:48:06.3216|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

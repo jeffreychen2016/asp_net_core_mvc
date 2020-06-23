@@ -76,9 +76,16 @@ namespace EmployeeManagement
                 options.AddPolicy("DeleteRolePolicy",
                     policy => policy.RequireClaim("Delete Role", "true")));
 
+            // create policy with custom requirment
             services.AddAuthorization(options =>
                 options.AddPolicy("EditRolePolicy",
-                    policy => policy.RequireClaim("Edit Role", "true")));
+                    policy => policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement())));
+
+            services.AddSingleton<IAuthorizationHandler, CanEditOnlyOtherAdminRolesAndClaimsHandler>();
+
+            // services.AddAuthorization(options =>
+            //     options.AddPolicy("EditRolePolicy",
+            //         policy => policy.RequireClaim("Edit Role", "true")));
 
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);

@@ -20526,11 +20526,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Account/AccessDenied.cshtml",
-      "TargetPath": "Views\\Account\\AccessDenied.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
@@ -20548,6 +20543,11 @@
     {
       "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Home/Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeffreychen/csharp/EmployeeManagement/Views/Administration/AccessDenied.cshtml",
+      "TargetPath": "Views\\Administration\\AccessDenied.cshtml",
       "FileKind": "mvc"
     },
     {

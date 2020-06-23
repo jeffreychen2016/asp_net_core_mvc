@@ -124,12 +124,6 @@ namespace EmployeeManagement.Controllers
             return View(model);
         }
 
-        [Route("[action]")]
-        [HttpGet]
-        [AllowAnonymous]
-        public IActionResult AccessDenied()
-        {
-            return View();
-        }
+
     }
 }

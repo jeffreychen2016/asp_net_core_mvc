@@ -61,6 +61,8 @@ namespace EmployeeManagement
                 config.EnableEndpointRouting = false;
             });
 
+            // change the defualt access denied path from /Account/AccessDenied to /Administration/AccessDenied
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = new PathString("/Administration/AccessDenied"));
 
             // add claim-based authorization
             services.AddAuthorization(options =>

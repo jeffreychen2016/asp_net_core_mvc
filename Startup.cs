@@ -65,13 +65,20 @@ namespace EmployeeManagement
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = new PathString("/Administration/AccessDenied"));
 
             // add claim-based authorization
+            // this is only going to check CLAIM TYPE (not claim value)
+            // services.AddAuthorization(options =>
+            //     options.AddPolicy("DeleteRolePolicy",
+            //         policy => policy.RequireClaim("Delete Role")));
+
+
+            // this will check both CLAIM TYPE AND CLAIM VALUE
             services.AddAuthorization(options =>
                 options.AddPolicy("DeleteRolePolicy",
-                    policy => policy.RequireClaim("Delete Role")));
+                    policy => policy.RequireClaim("Delete Role", "true")));
 
             services.AddAuthorization(options =>
                 options.AddPolicy("EditRolePolicy",
-                    policy => policy.RequireClaim("Edit Role")));
+                    policy => policy.RequireClaim("Edit Role", "true")));
 
             // add mvc service
             // services.AddMvc(option => option.EnableEndpointRouting = false);

@@ -1,7 +1,0 @@
-2020-06-14 16:05:50.6868|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
-2020-06-14 16:05:50.7162|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
-2020-06-14 16:05:50.7179|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
-2020-06-14 16:05:50.7179|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
-2020-06-14 16:05:50.7179|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
-2020-06-14 16:06:13.5457|WARN|ErrorController|404 Error Occured. Path = /Home/foo + and QueryString = ?a=b
-2020-06-14 16:07:21.8783|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

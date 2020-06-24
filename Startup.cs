@@ -61,6 +61,16 @@ namespace EmployeeManagement
                 config.EnableEndpointRouting = false;
             });
 
+            // add google authentication service
+            services.AddAuthentication().AddGoogle(options =>
+            {
+                options.ClientId = "";
+                options.ClientSecret = "";
+
+                // we can change the default callback path from localhost:5001/signin-google to others
+                // options.CallbackPath
+            });
+
             // change the defualt access denied path from /Account/AccessDenied to /Administration/AccessDenied
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = new PathString("/Administration/AccessDenied"));
 

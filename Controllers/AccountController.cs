@@ -2,6 +2,7 @@ using EmployeeManagement.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -14,12 +15,15 @@ namespace EmployeeManagement.Controllers
     {
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly ILogger<AccountController> logger;
 
         public AccountController(UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+            SignInManager<ApplicationUser> signInManager,
+            ILogger<AccountController> logger)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.logger = logger;
         }
 
         [Route("[action]")]
@@ -52,6 +56,13 @@ namespace EmployeeManagement.Controllers
                 // SignInManager and redirect to index action of HomeController
                 if (result.Succeeded)
                 {
+                    // after seccuessul register, we want to generate email confirmation email
+                    var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+                    // MUST create `ConfirmEmail` action method first, otherwise Url.Action() will always return null when there /controller/action is invalid
+                    var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = token }, Request.Scheme);
+
+                    logger.Log(LogLevel.Warning, confirmationLink);
+
 
                     // if it is the admin registers a new user
                     // we do not want to log in as new user and got redirected
@@ -63,9 +74,15 @@ namespace EmployeeManagement.Controllers
                     // isPersistent: create permant cookie OR session cookie
                     // session cookie get lost when close brower
                     // isPersistent: false - create session cookie
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
+                    // await signInManager.SignInAsync(user, isPersistent: false);
+                    // return RedirectToAction("index", "home");
+
+                    ViewBag.ErrorTitle = "Registration successful";
+                    ViewBag.ErrorMessage = "Before you can login, pease confirm your email by clicking on the confirmation link.";
+
+                    return View("Error");
                 }
+
 
                 // If there are any errors, add them to the ModelState object
                 // which will be displayed by the validation summary tag helper
@@ -109,10 +126,19 @@ namespace EmployeeManagement.Controllers
         // model binding automatically maps query string to the action parameter
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            model.ExternalLogins = (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
             if (ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync(
-                    model.Email, model.Password, model.RememberMe, false);
+                // add this check to print email not confirmed error
+                var user = await userManager.FindByEmailAsync(model.Email);
+                if (user != null && !user.EmailConfirmed && (await userManager.CheckPasswordAsync(user, model.Password)))
+                {
+                    ModelState.AddModelError(string.Empty, "Email not confirmed yet");
+                    return View(model);
+                }
+
+                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
 
                 if (result.Succeeded)
                 {
@@ -156,14 +182,12 @@ namespace EmployeeManagement.Controllers
             LoginViewModel loginViewModel = new LoginViewModel
             {
                 ReturnUrl = returnUrl,
-                ExternalLogins =
-                        (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList()
+                ExternalLogins = (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList()
             };
 
             if (remoteError != null)
             {
-                ModelState
-                    .AddModelError(string.Empty, $"Error from external provider: {remoteError}");
+                ModelState.AddModelError(string.Empty, $"Error from external provider: {remoteError}");
 
                 return View("Login", loginViewModel);
             }
@@ -178,6 +202,29 @@ namespace EmployeeManagement.Controllers
                 return View("Login", loginViewModel);
             }
 
+
+            // Get the email claim value from enteral provider
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            ApplicationUser user = null;
+
+            if (email != null)
+            {
+                // check the email we get from the external provider to see if the email has been confirmed.
+                user = await userManager.FindByEmailAsync(email);
+
+                // if the user exist, but email is not confirmed
+                if (user != null && !user.EmailConfirmed)
+                {
+                    ModelState.AddModelError(string.Empty, "Email not confirmed yet");
+                    return View("Login", loginViewModel);
+                }
+            }
+
+            // the rest of cases:
+            // 1. if email is null
+            // 2. if email is not null and user not exist and email is not confirmed
+            // 3. if email is not null and user exists and email is confirmed
+
             // If the user already has a login (i.e if there is a record in AspNetUserLogins
             // table) then sign-in the user with this external login provider
             // for external login to work, there must be a corresponding record AspNetUserLogins table.
@@ -188,20 +235,16 @@ namespace EmployeeManagement.Controllers
             {
                 return LocalRedirect(returnUrl);
             }
-
             // If there is no record in AspNetUserLogins table, the user may not have
             // a local account, then we will create a local account using the email
             else
             {
-                // Get the email claim value
-                var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-
                 if (email != null)
                 {
                     // Create a new user without password in our local if we do not have a user already
                     // if we have more than 1 external identity provider like google and facebook,
                     // if they all using same email, then this check will make sure we only create 1 user record in our database
-                    var user = await userManager.FindByEmailAsync(email);
+                    // user = await userManager.FindByEmailAsync(email);
 
                     if (user == null)
                     {
@@ -212,6 +255,18 @@ namespace EmployeeManagement.Controllers
                         };
 
                         await userManager.CreateAsync(user);
+
+                        // after seccuessul register, we want to generate email confirmation email
+                        var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+                        // MUST create `ConfirmEmail` action method first, otherwise Url.Action() will always return null when there /controller/action is invalid
+                        var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = token }, Request.Scheme);
+
+                        logger.Log(LogLevel.Warning, confirmationLink);
+
+                        ViewBag.ErrorTitle = "Registration successful";
+                        ViewBag.ErrorMessage = "Before you can Login, please confirm your " +
+                            "email, by clicking on the confirmation link we have emailed you";
+                        return View("Error");
                     }
 
                     // Add a login (i.e insert a row for the user in AspNetUserLogins table)
@@ -227,6 +282,38 @@ namespace EmployeeManagement.Controllers
 
                 return View("Error");
             }
+        }
+
+        [Route("[action]")]
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            if (userId == null || token == null)
+            {
+                return RedirectToAction("index", "home");
+            }
+
+            var user = await userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"The user ID {userId} is invalid";
+                return View("NoFound");
+            }
+
+            // this flags the emailConfirmed column in user table from false to true
+            var result = await userManager.ConfirmEmailAsync(user, token);
+
+            if (result.Succeeded)
+            {
+                return View();
+            }
+
+            ViewBag.ErrorTitle = "Email cannot be confirmed";
+            return View("Error");
+
+            // manual paste the confirmation url to brower to verify it it works.
         }
     }
 }

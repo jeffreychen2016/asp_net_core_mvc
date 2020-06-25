@@ -38,15 +38,20 @@ namespace EmployeeManagement
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
 
             // register Identity core for authentication and authorization
-            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>()
+                    // add token provider for email confirmation functionality
+                    .AddDefaultTokenProviders();
 
             // change the password configuration
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 10;
                 options.Password.RequiredUniqueChars = 3;
-            });
 
+                // add this so user can not log in until they confirm their emails
+                options.SignIn.RequireConfirmedEmail = true;
+            });
 
             // add mvc service
             services.AddMvc(config =>
@@ -59,6 +64,8 @@ namespace EmployeeManagement
 
                 // fix for route issue
                 config.EnableEndpointRouting = false;
+
+                // config.SuppressAsyncSuffixInActionNames = false;
             });
 
             // add google authentication service

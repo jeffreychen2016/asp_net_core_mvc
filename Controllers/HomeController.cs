@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -21,12 +23,20 @@ namespace EmployeeManagement.Controllers
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IHostingEnvironment _hostingEnvironment;
         private readonly ILogger<HomeController> _logger;
+        private readonly IDataProtector _protector;
 
-        public HomeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment, ILogger<HomeController> logger)
+        public HomeController(IEmployeeRepository employeeRepository,
+            IHostingEnvironment hostingEnvironment,
+            ILogger<HomeController> logger,
+            IDataProtectionProvider dataProtectionProvider,
+            DataProtectionPurposeStrings dataProtectionPurposeStrings)
         {
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
+
+            // add it to encrypt and decrypt query string
+            _protector = dataProtectionProvider.CreateProtector(dataProtectionPurposeStrings.EmployeeIdRouteValue);
         }
 
         private string ProcessUploadedFile(EmployeeCreateViewModel model)
@@ -54,7 +64,13 @@ namespace EmployeeManagement.Controllers
         [Route("[action]")] // /home/index
         public ViewResult Index()
         {
-            var model = _employeeRepository.GetAllEmployee();
+            var model = _employeeRepository.GetAllEmployee()
+                        .Select(e =>
+                        {
+                            // encrypt employee id
+                            e.EncryptedId = _protector.Protect(e.Id.ToString());
+                            return e;
+                        });
             return View(model);
         }
 
@@ -64,7 +80,7 @@ namespace EmployeeManagement.Controllers
         // chain AddXmlSerializerFormatters() after AddMvc() in DI container to reutrn xml.
         // [Route("Details/{id?}")] // /home/details/1
         [Route("[action]/{id?}")] // /home/details/1
-        public ViewResult Details(int id)
+        public ViewResult Details(string id)
         {
             // throw new Exception("aaaaa");
             // _logger.LogTrace("Trace Log");
@@ -95,13 +111,16 @@ namespace EmployeeManagement.Controllers
             // use ViewModel to include extra data that Employee model does not have
             // such as PageTitle
 
+            // decrypt the id
+            int employeeId = Convert.ToInt32(_protector.Unprotect(id));
+
             // check if the employee exits for the incoming id
             // if not, redirect to EmployeeNotFound page.
-            Employee employee = _employeeRepository.GetEmployee(id);
+            Employee employee = _employeeRepository.GetEmployee(employeeId);
             if (employee == null)
             {
                 Response.StatusCode = 404;
-                return View("EmployeeNotFound", id);
+                return View("EmployeeNotFound", employeeId);
             }
 
             var homeDetailsViewModel = new HomeDetailsViewModel()

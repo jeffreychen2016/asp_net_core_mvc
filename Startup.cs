@@ -121,6 +121,9 @@ namespace EmployeeManagement
             // AddScoped: we want the instance to be alive for a given http request
             // and new instance for different/new http request.
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
+
+            // add it to encrypt and decrypt query string
+            services.AddSingleton<DataProtectionPurposeStrings>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

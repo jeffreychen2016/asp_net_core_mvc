@@ -104,3 +104,15 @@ EmployeeManagement.Controllers.AccountController.ResetPassword (EmployeeManageme
 2020-06-25 19:19:52.5697|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 91282ffe-e444-46d5-9533-4c2c327b13cd.
 2020-06-25 19:19:52.5747|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 91282ffe-e444-46d5-9533-4c2c327b13cd failed to provide the correct password.
 2020-06-25 19:20:08.2872|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:25:45.8814|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:25:45.9587|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:25:45.9663|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:25:45.9707|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:25:45.9755|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:29:06.4772|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:29:24.7732|WARN|ErrorController|404 Error Occured. Path = /Images/ + and QueryString = 
+2020-06-25 20:34:19.2815|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:34:19.4237|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:34:19.4321|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:34:19.4378|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:34:19.4437|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement

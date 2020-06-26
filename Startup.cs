@@ -53,6 +53,9 @@ namespace EmployeeManagement
                 options.SignIn.RequireConfirmedEmail = true;
             });
 
+            // set the life of token to 5 hours for ALL type of token
+            // services.Configure<DataProtectionTokenProviderOptions>(o => o.TokenLifespan = TimeSpan.FromHours(5));
+
             // add mvc service
             services.AddMvc(config =>
             {

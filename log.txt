@@ -116,3 +116,28 @@ EmployeeManagement.Controllers.AccountController.ResetPassword (EmployeeManageme
 2020-06-25 20:34:19.4321|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-06-25 20:34:19.4378|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
 2020-06-25 20:34:19.4437|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:43:17.7039|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:43:17.7944|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:43:17.8008|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:43:17.8046|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:43:17.8112|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:45:18.8859|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:45:19.0174|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:45:19.0481|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:45:19.0561|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:45:19.0619|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:47:24.4939|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:49:19.7933|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:49:20.0492|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:49:20.0616|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:49:20.0661|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:49:20.0705|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:53:24.0053|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2020-06-25 20:53:24.1470|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2020-06-25 20:53:24.1638|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 20:53:24.1799|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 20:53:24.1972|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 20:54:57.3091|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:55:22.0212|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:55:24.3991|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 20:55:40.4223|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 

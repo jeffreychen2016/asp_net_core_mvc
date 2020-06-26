@@ -51,6 +51,10 @@ namespace EmployeeManagement
 
                 // add this so user can not log in until they confirm their emails
                 options.SignIn.RequireConfirmedEmail = true;
+
+                // add lockout feature
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
             });
 
             // set the life of token to 5 hours for ALL type of token

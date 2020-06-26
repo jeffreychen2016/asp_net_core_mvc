@@ -141,3 +141,36 @@ EmployeeManagement.Controllers.AccountController.ResetPassword (EmployeeManageme
 2020-06-25 20:55:22.0212|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
 2020-06-25 20:55:24.3991|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
 2020-06-25 20:55:40.4223|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:05:36.3669|FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel.
+2020-06-25 21:06:28.2593|FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel.
+2020-06-25 21:09:37.3733|FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel.
+2020-06-25 21:11:18.2607|FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel.
+2020-06-25 21:12:04.2855|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5002
+2020-06-25 21:12:04.3284|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5003
+2020-06-25 21:12:04.3335|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 21:12:04.3373|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 21:12:04.3501|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 21:12:06.9690|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:15:36.6802|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5002
+2020-06-25 21:15:36.7392|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5003
+2020-06-25 21:15:36.7564|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-06-25 21:15:36.7615|INFO|Microsoft.Hosting.Lifetime|Hosting environment: production
+2020-06-25 21:15:36.7654|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/jeffreychen/csharp/EmployeeManagement
+2020-06-25 21:17:51.7323|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 395b1b58-cee1-45d2-afa6-475d990c703d.
+2020-06-25 21:17:51.7361|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d failed to provide the correct password.
+2020-06-25 21:17:56.4526|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 395b1b58-cee1-45d2-afa6-475d990c703d.
+2020-06-25 21:17:56.4573|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d failed to provide the correct password.
+2020-06-25 21:18:00.1275|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 395b1b58-cee1-45d2-afa6-475d990c703d.
+2020-06-25 21:18:00.1322|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d failed to provide the correct password.
+2020-06-25 21:18:01.3992|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 395b1b58-cee1-45d2-afa6-475d990c703d.
+2020-06-25 21:18:01.4028|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d failed to provide the correct password.
+2020-06-25 21:18:02.5329|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 395b1b58-cee1-45d2-afa6-475d990c703d.
+2020-06-25 21:18:02.5384|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d failed to provide the correct password.
+2020-06-25 21:18:02.5439|WARN|Microsoft.AspNetCore.Identity.UserManager|User 395b1b58-cee1-45d2-afa6-475d990c703d is locked out.
+2020-06-25 21:18:02.5717|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 395b1b58-cee1-45d2-afa6-475d990c703d is currently locked out.
+2020-06-25 21:18:02.9208|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:18:05.8324|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:18:20.0446|WARN|EmployeeManagement.Controllers.AccountController|https://localhost:5002/Account/ResetPassword?email=jeffreychen@gmail.com&token=CfDJ8HGlVyXCNGBOtUn%2BugHhQXgJXgLMRqYtu9hrA7XIk4odLWYHLhGIlnRea8p1sH1ifma55LWFZ7qlXcF2a6FoViQ%2BKEzayWrS%2BZkptK4kkO0dNhCcPcNv%2BCKd%2FaI1M6JajZwLq2JEaV0HOvbNNqQJIBEFfaqe50R16sY4YCfBUiNcgDdJqfm44fL2hKHbRtCvmPMZlNG3wI9wUvzWn6%2FuHo7%2FmgVzdC5pVvxcSO3ih8lU
+2020-06-25 21:18:34.7157|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:18:37.7040|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
+2020-06-25 21:18:50.8030|WARN|ErrorController|404 Error Occured. Path = /favicon.ico + and QueryString = 
